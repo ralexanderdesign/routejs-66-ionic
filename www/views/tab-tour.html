@@ -1,0 +1,40 @@
+<ion-view view-title="Tour Parameters">
+  <ion-content>
+    <div class="list">
+
+			<!-- number of stops -->
+
+			<label class="item item-stacked-label">
+		    <div class="input-label">Number of Tour Stops</div> 
+		    <div class="range range-positive">
+			    <i class="icon ion-pin"></i>
+			    <input type="range" name="stops" min="{{ tourParams.stops.min }}" max="{{ tourParams.stops.max }}" value="{{ tourParams.stops.value }}" ng-Model="tourParams.stops.value">
+			    <span>{{ tourParams.stops.value }}</span>
+			  </div>
+			</label>
+
+		  <!-- walking radius -->
+
+			<label class="item item-stacked-label">
+		    <div class="input-label">Walking Radius (miles)</div>
+			  <div class="range range-positive">
+			    <i class="icon ion-pinpoint"></i>
+			    <input type="range" name="radius" min="{{ tourParams.radius.min }}" max="{{ tourParams.radius.max }}" value="{{ tourParams.radius.value }}" ng-Model="tourParams.radius.value">
+			    <span>{{ tourParams.radius.value }}</span>
+			  </div>
+			</label>
+
+		  <!-- culture vs entertainment -->
+
+			<!-- <label class="item item-stacked-label">
+		    <div class="input-label">Culture vs. Entertainment Ratio<button class="button button-small button-clear button-positive button-info" ng-click="tourEmphasisInfo()"><i class="icon ion-information-circled"></i></div>
+			  <div class="range range-positive">
+			    <i class="icon ion-flag"></i>
+			    <input type="range" name="tourEmphasis" min="{{ tourEmphasis.min }}" max="{{ tourEmphasis.max }}" value="{{ tourEmphasis.value }}" ng-Model="tourEmphasis.value">
+			    <span>{{ tourEmphasis.value }}</span>
+			  </div>
+		  </label> -->
+
+		</div>
+  </ion-content>
+</ion-view>

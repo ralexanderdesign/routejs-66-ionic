@@ -1,0 +1,33 @@
+.item-input.tour {
+	padding: inherit;
+}
+.button-info {
+  position: relative;
+  top: -10px;
+}
+.scroll {
+  height: 100%;
+}
+.map-row {
+  height: 85%;
+  margin: 0px !important;
+}
+.map-container {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+}
+.map {
+  height: 100%;
+  width: 100%;
+}
+.rotate-90 {
+  display: inline-block; 
+  transform: rotate(90deg);
+}
+.range-label {
+	width: 40px;
+	text-align: center;
+}
